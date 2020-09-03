@@ -37,14 +37,29 @@ namespace Inheritance
 
 
 
-
-           
-
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+
+            var Reptile1 = new Bird();
+
+            Reptile1.TypeOfFood = "Worms";
+            Reptile1.ColorOf = "Red and Black";
+            Reptile1.FlySouth = "Yes";
+            Reptile1.TypeOfSong = "chrip chrip chrip";
+
+
+            Console.WriteLine($"");
+
+            Console.WriteLine($"This Reptile enjoys a meal of " +
+                $"{Reptile1.TypeOfFood}. It has skin of {Reptile1.ColorOf}." +
+                $" It's song sounds a bit like '{Reptile1.TypeOfSong}.' " +
+                $"If asked if they fly south for the winter, they would " +
+                $"answer: {Reptile1.FlySouth}.");
+
+            Console.WriteLine($"----------------------------------------");
         }
     }
 }
