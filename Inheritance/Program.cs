@@ -8,19 +8,6 @@ namespace Inheritance
         {
             // TODO Be sure to follow best practice when creating your classes
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
 
 
             /*Create an object of your Bird class
@@ -28,6 +15,30 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+
+            var Bird1 = new Bird();
+
+            Bird1.TypeOfFood = "Worms";
+            Bird1.ColorOf = "Red and Black";
+            Bird1.FlySouth = "Yes";
+            Bird1.TypeOfSong = "chrip chrip chrip";
+
+
+            Console.WriteLine($"");
+
+            Console.WriteLine($"This bird enjoys a meal of " +
+                $"{Bird1.TypeOfFood}. It has feathers of {Bird1.ColorOf}." +
+                $" It's song sounds a bit like '{Bird1.TypeOfSong}.' " +
+                $"If asked if they fly south for the winter, they would " +
+                $"answer: {Bird1.FlySouth}.");
+
+            Console.WriteLine($"----------------------------------------");
+
+
+
+
+           
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
